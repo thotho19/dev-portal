@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qi-Card Api Portal</title>
+<meta name="description" content=" Api Portal for all projects in  Qi-Card" />
+
+
+<meta property="og:title" content="Qi-Card Api Portal">
+<meta property="og:description" content="Api Portal for all projects in  Qi-Card">
+<meta property="og:image" content="./logo.jpg">
+<meta name="twitter:card" content="logo">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+      <div class="cont-nav">
+        <ul class="nav">
+          <li>
+            <img src="./logo.jpg" alt="Qi-Card logo" />
+          </li>
+          <li><button class="gred" id="myBtn">Get Gred</button></li>
+        </ul>
+      </div>
+      <div id="redoc-container">
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Get Gredntial from email </h2>
+            <hr />
+          </div>
+          <form id="formEmail" action="#">
+            <div class="modal-body">
+      
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email" class="emailinput">
+      
+            </div>
+            <div class="modal-footer">
+              <input class="send" type="submit" value="send" />
+      
+          </form>
+      
+      
+        </div>
+      </div>
+      
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/redoc@2.0.0-rc.55/bundles/redoc.standalone.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/gh/wll8/redoc-try@1.4.0/dist/try.js"></script>
+  <script>
+    // initTry(`https://petstore.swagger.io/v2/swagger.json`)
+    initTry({
+      // openApi: `htt            -aadf-b                  f`,
+      //openApi: 'https://run.mocky.i-4126-88df-018570c03d60',
+      openApi: "https://run.mocky.io/v3/4843c07d-22b5-4fce-9b14-da0fc8b265c8",
+      redocOptions: {scrollYOffset: 50},
+    })
+  </script>
+  <script src="./modal.js"></script>
+</body>
+</html>
