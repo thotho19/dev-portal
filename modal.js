@@ -45,7 +45,7 @@ var email = document.getElementById("email").value;
     redirect: "follow",
   };
 
-  fetch("http://172.18.211.201:5000/api/ask-credential", requestOptions)
+  fetch("https://ur-task.com/qi_dev_portal/api/ask-credential", requestOptions)
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
