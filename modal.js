@@ -34,7 +34,7 @@ var email = document.getElementById("email").value;
   myHeaders.append("Content-Type", "application/json");
 
   var raw = JSON.stringify({
-  "credentialName": "idms_uat",
+  "credentialName": "idms_cms_uat",
   "email": email
 });
 
